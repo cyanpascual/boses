@@ -39,7 +39,7 @@ class AddPost extends Component {
         <br/>
         <input 
           type="text" 
-          placeholder="Write the title of your post" 
+          placeholder="Complaint" 
           onChange={ this.handleChange } 
           value={ this.state.title }
         />

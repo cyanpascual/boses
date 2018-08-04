@@ -41,7 +41,7 @@ class Posts extends Component {
             return (
 
               <div key={key} style ={{backgroundColor: 'rgb(139, 157, 195)', margin:'1em' }}>
-                <div>Title: { posts[key].title }</div>
+                <div>Complaint: { posts[key].title }</div>
                 <div>Upvotes: { posts[key].upvote }</div>
                 <div>
                   <button 
