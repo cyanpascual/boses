@@ -1,4 +1,29 @@
 import React, { Component } from 'react';
+  var left ={
+    float:"left",
+    display:"inline-block",
+    width: "100px",
+    height: "100%",
+    color: "white",
+    fontFamily: "Arial",
+    fontWeight: "bold"
+  }
+
+  var right = {
+    float:"left",
+    display:"inline-block",
+    width: "-moz-calc(95% - 100px)",
+    width: "-webkit-calc(95% - 100px)",
+    width: "calc(95% - 100px)",
+    height: "100%",
+    fontSize: "32px",
+    color: "white",
+    padding:"2%",
+    fontFamily: "Arial",
+    fontWeight: "bold"
+
+  }
+
 
 class Posts extends Component {
 
@@ -16,6 +41,10 @@ class Posts extends Component {
 
     });
   }
+
+
+
+
 
   render() {
     let posts = this.props.posts;
@@ -36,14 +65,15 @@ class Posts extends Component {
     return (
 
       <div className="Posts" >
-        <a href ="/add-post">Add Post</a>
+        
+        
         { Object.keys(posts).map(function(key) {
             return (
-
-              <div key={key} style ={{backgroundColor: 'rgb(139, 157, 195)', margin:'1em' }}>
-                <div>Complaint: { posts[key].title }</div>
-                <div>Upvotes: { posts[key].upvote }</div>
-                <div>
+              <div key={key} style ={{backgroundColor: '#801515', margin:'1em', height:"100px", padding:"1em",border:"2px solid #801515",borderRadius:"25px"}}>
+                <div style={left}>
+                  <div>Upvotes: { posts[key].upvote }</div>
+                  <br/>
+                  <br/>
                   <button 
                     onClick={ _this.handleUpvote.bind(this, posts[key], key) }
                     type="button"
@@ -51,6 +81,7 @@ class Posts extends Component {
                     Upvote
                   </button> 
                 </div>
+                <div style={right}>{posts[key].title }</div>
               </div>
             );
         })}

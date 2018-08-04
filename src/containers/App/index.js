@@ -3,6 +3,8 @@ import * as firebase from "firebase";
 
 import config from './firebase-config';
 
+import {Header } from './../Header/index.js';
+
 class App extends Component {
   constructor() {
     super();
@@ -30,7 +32,9 @@ class App extends Component {
 
   render() {
     return (
+
       <div className="App">
+        <Header />
         {this.props.children && React.cloneElement(this.props.children, {
           firebase: firebase.database(),
           posts: this.state.posts,

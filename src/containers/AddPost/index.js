@@ -34,14 +34,15 @@ class AddPost extends Component {
 
   render() {
     return (
-      <div className="AddPost">
-        <a href ="/posts">Back</a>
+      <div className="AddPost" style={{padding:"20px"}}>
+        
         <br/>
         <input 
           type="text" 
           placeholder="Complaint" 
           onChange={ this.handleChange } 
           value={ this.state.title }
+          style={{width:"90%"}}
         />
         <button 
           type="submit" 
