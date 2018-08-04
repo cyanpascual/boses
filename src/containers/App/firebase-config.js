@@ -1,8 +1,8 @@
 export default {
-  apiKey: "AIzaSyBRExKF0cHylh_wFLcd8Vxugj0UQRpq8oc",
-  authDomain: "reddit-clone-53da5.firebaseapp.com",
-  databaseURL: "https://reddit-clone-53da5.firebaseio.com",
-  projectId: "reddit-clone-53da5",
-  storageBucket: "reddit-clone-53da5.appspot.com",
-  messagingSenderId: "490290211297"
+    apiKey: "AIzaSyDvfDlx5GMuO0NGCk6XQJxlUewCQ1d7eyg",
+    authDomain: "reddit-clone-e7e35.firebaseapp.com",
+    databaseURL: "https://reddit-clone-e7e35.firebaseio.com",
+    projectId: "reddit-clone-e7e35",
+    storageBucket: "reddit-clone-e7e35.appspot.com",
+    messagingSenderId: "531678918949"
 };

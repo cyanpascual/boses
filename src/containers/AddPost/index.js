@@ -35,6 +35,8 @@ class AddPost extends Component {
   render() {
     return (
       <div className="AddPost">
+        <a href ="/posts">Back</a>
+        <br/>
         <input 
           type="text" 
           placeholder="Write the title of your post" 
